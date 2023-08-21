@@ -2,6 +2,7 @@
 企業管理學系二年級甲班統計學
 
 **課程網頁**：https://github.com/HungHuaTien/Statistics-I/
+
 **講義下載**：網址連結
 
 ## 課程公告
