@@ -3,7 +3,7 @@
 
 **課程網頁**：https://github.com/HungHuaTien/Statistics-I/
 
-**講義下載**：網址連結
+**講義下載**：https://reurl.cc/LAyLM7
 
 ## 課程公告
 
