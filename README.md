@@ -1,6 +1,6 @@
 # Statistics-I
 
-**企管二甲統計學**
+## 企管二甲統計學
 
 **課程網頁**：https://github.com/HungHuaTien/Statistics-I/
 
