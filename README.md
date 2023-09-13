@@ -14,6 +14,10 @@
 - **課程進度**：課程綱要 ＋入門概論-緒論
 - **提醒事項**：Week2第一次實習課，線上課程-R語言的使用與操作
 - **課本例題**：例1.4, 例1.7, 例2.1, 例4.1
+- **課程錄影**
+  - https://youtu.be/FKhwtKf3azQ
+  - https://youtu.be/5l1_bqtFyJY
+  - https://youtu.be/63ec_woOdaY 
   
 
 
