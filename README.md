@@ -19,5 +19,10 @@
   - https://youtu.be/5l1_bqtFyJY
   - https://youtu.be/63ec_woOdaY 
   
+### 第一次09/19和第二次10/03實習課：線上上課
+-**課程進度**：R入門
+- **課程錄影**：
+  - https://youtu.be/pl4rzEsj__k
+  - https://youtu.be/4fB0U8BHnuw
 
 
