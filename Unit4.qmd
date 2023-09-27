@@ -1,0 +1,144 @@
+---
+title: "Unit 4 統計圖表"
+author: "田弘華"
+format: html
+---
+
+** 1. 用R學統計：血型**
+
+```{r}
+## Input Data
+x <- c("O", "O", "A", "B", "A","B", "B", "O", "O", "O", "A", "A", "AB", "A", "B","O", "O", "A", "AB", "AB")
+
+## Process Data（一）
+(xtable <- table(x))   # 次數分配表
+(prop.table(xtable))     # 將次數分配表轉成相對次數分配表
+
+## Process Data（二）：土法煉鋼
+xptable <- (xtable/sum(xtable))   # 計算相對次數
+xctable <- cumsum(xtable)         # 計算累計次數
+xpctable <- xctable /sum(xtable)  # 計算累計相對次數
+(table_all <- t(rbind(xtable, xptable, xctable, xpctable))) # 列出所有結果
+
+## Process Data（三）
+## (1) 用plyr套件裡的count()函數
+library(plyr)
+count(x)
+
+## (2) 用epiDisplay套件中的tab1()函數，
+library(epiDisplay) #載入epiDisplay
+tab1(x, cum.percent = TRUE) # 有表、有圖
+
+## (3) 用frequency套件中的freq()函數（最完整，有表有圖）
+library(frequency) #載入frequency
+freq(x, file = "gender_fre.html", type="html") # 產出檔名為gender_fre.html的次數分配表，並存放在桌面（工作目錄）。
+```
+
+**2.用R學統計：Model體重**
+
+```{r}
+## Input Data
+X <- c(45, 40, 46, 41, 44, 43, 48, 42, 45, 45, 42, 41, 46, 45, 45, 40, 45, 50, 44, 42, 50, 45, 44, 40, 40, 37, 46, 42, 45, 43, 43, 40, 38, 40, 44, 45, 46, 46, 39, 51, 44, 38, 39, 39, 43, 46, 40, 46, 38, 44)
+
+(n <- length(X))
+
+## 求算全距、決定組數、決定組距
+(R <- max(X)- min(X))
+(K <- round(1 + 3.32 * log(n, base = 10))) # 組數
+(G <- ceiling(R/K)) # 組距
+
+## 決定組界
+lower.limit <- min(X) # 下阻限
+upper.limit <- lower.limit + K * G # 上組限
+(group.boundary <- seq(lower.limit, upper.limit, G)) # 組界
+(group <- cut(X, breaks = group.boundary, right = F, include.lowest = F)) # right預設為左開又閉，改成False為左閉右開
+(Xtable <- table(group))# 次數分配表
+
+
+## 次數分配表
+(group <- cut(X, breaks = group.boundary, right = F, labels = c("I", "II", "III", "IV", "V", "VI", "VII"), include.lowest = F)) # 分類給標籤
+
+Xtable <- table(group)
+XCtable <- cumsum(Xtable)   #計算累計次數 
+XPtable <- round(Xtable/ sum(Xtable),2) #計算相對次數
+XCPtable <- round(XCtable/sum(Xtable),2) #計算累計相對次數
+(ALLtable <- t(rbind(Xtable, XCtable, XPtable, XCPtable))) #rbind將計算的數值合併，t轉置
+```
+
+**3. 用R學統計：長條圖與圓餅圖**：
+
+假如對一組25人的飲酒者所飲酒類進行調查，把飲酒者按紅酒（1）、白酒（2）、黃酒（3）、啤酒（4）分成四類。
+
+調查資料如下：3 4 1 1 3 4 3 3 1 3 2 1 2 1 2 3 2 3 1 1 1 1 4 3 1。
+
+```{r}
+## Input Data
+drink <- c(3, 4, 1, 1, 3, 4, 3, 3, 1, 3, 2, 1, 2, 1, 2, 3, 2, 3, 1, 1, 1, 1, 4, 3, 1)
+
+## Process Data
+xtable <- table(drink) # 畫長條圖要先分組
+barplot(xtable)        # 用次數分配表繪製長條圖。
+barplot(xtable/length(drink),
+        col = c("red","yellow","blue","white"))# 用相對次數分配表繪製長條圖，並加上顏色
+
+## Process Data 畫圓餅圖
+pie(xtable)     # 用次數分配表繪製圓餅圖
+names(xtable) <- c("紅酒","白酒","黃酒","啤酒") # 分類名稱命名
+pie(xtable, col = c("purple", "green", "cyan", "white")) # 用分類名稱繪圖，並加上顏色
+```
+
+**4. 用R學統計：** 已知閱讀成績，請畫直方圖
+
+```{r}
+## Input data
+# Create a vector of reading scores
+Reading <- c(47, 2, 44, 41, 7, 6, 35, 38, 35, 36,10, 11, 14, 14, 30, 30, 32, 33, 34, 32,
+31, 31, 15, 16, 17, 16, 15, 19, 18, 16,
+25, 25, 26, 26, 27, 29, 29, 28, 29, 27,
+20, 21, 21, 21, 24, 24, 23, 20, 21, 20)
+
+# Create histogram
+hist(Reading, col = "green")   # 次數直方圖 hist(Reading, breaks = 20)
+
+# Create histogram with probability density curve
+hist(Reading, probability = TRUE) # 相對次數直方圖
+lines(density(Reading)) # 加上機率密度函數
+
+# Change the x-axis label in the histogram
+hist(Reading, xlab = "Scores", main = "Reading")
+abline(v = mean(Reading), col = "green")
+abline(v = median(Reading), lty = 2, col = "blue")
+abline(v = mean(Reading) - sd(Reading), col = "red")
+abline(v = mean(Reading) + sd(Reading), col = "red")
+```
+
+**5. 用R學統計：線圖**
+
+```{r}
+## Input Data
+y <- c(191, 141, 208, 195, 223, 205, 194, 197, 180, 196, 185, 181)
+x <- 1:12
+## Process Data
+plot(x, y, type = "l", bty = "l", xlab = "月份", ylab = "營業額(億)",
+    main = "107年台塑公司營業額趨勢圖") #去掉一半的框
+```
+
+**6. 用R學統計：散點圖**
+
+已知10名學生的年齡、身高和體重，繪出這些這些數據的散點圖。
+
+| 序號 | 年齡 | 身高 | 體重 | 序號 | 年齡 | 身高 | 體重 |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| 1    | 13   | 144  | 38.1 | 6    | 14   | 175  | 51.0 |
+| 2    | 13   | 166  | 44.5 | 7    | 14   | 161  | 46.5 |
+| 3    | 14   | 163  | 40.8 | 8    | 15   | 150  | 60.3 |
+| 4    | 15   | 169  | 50.8 | 9    | 16   | 183  | 68.0 |
+| 5    | 14   | 160  | 46.5 | 10   | 15   | 169  | 50.8 |
+
+```{R}
+height<- c(144, 166, 163, 169, 160, 175, 161, 150, 183, 169)
+weight <- c(38.1, 44.5, 40.8, 50.8, 46.5, 51.0, 46.5, 60.3, 68.0, 50.8)
+df <- data.frame(height, weight)
+plot(df)    # 散點圖
+pairs(df)   # 成對散點圖
+```
