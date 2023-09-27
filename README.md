@@ -16,6 +16,10 @@
 - **課本內容**：講義Unit 4對應課本Ch5，本章習題為期中考考試範圍。
 - **個人作業**：Week 6的實習課，請完成並繳交本章課本習題5.4與5.10
 - **加分作業**：講義的隨堂練習題（下週上課時繳交給我）
+- **課程錄影**
+  - https://youtu.be/5i5f7vbJbRA
+  - https://youtu.be/M9RXBkD9g_M
+  - https://youtu.be/1gqgrTT-lko
 
 ### Week 2 2023/09/20(三)
 
