@@ -48,5 +48,5 @@
 - **課程錄影**：
   - https://youtu.be/pl4rzEsj__k
   - https://youtu.be/4fB0U8BHnuw
-- **程式分享連結**：https://posit.cloud/content/6523746 （講義範例）
+
 
