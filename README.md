@@ -15,6 +15,9 @@
 - **課程進度**：Unit 5 隨機變數與機率分配
 - **個人作業**：助教在實習課指派
 - **課程錄影**
+  -  https://youtu.be/sYCKjSkGF2I
+  -  https://youtu.be/gYy6JVBM0LA
+  -  https://youtu.be/WJwsGbNCSuM
 
 ### Week 3 2023/09/27(三)
 
