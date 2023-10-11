@@ -15,6 +15,9 @@
 - **課程進度**：Unit 5 + Unit 6 離散型機率分配 + Unit 7
 - **個人作業**：助教在實習課指派
 - **課程錄影**
+  - https://youtu.be/RnPdwl9_CTo
+  - https://youtu.be/WgyFJ51gUZE
+  - https://youtu.be/Q90vPjge8Nw
 
 ### Week 4 2023/10/04(三)
 
