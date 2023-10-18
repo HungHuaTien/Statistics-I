@@ -15,6 +15,9 @@
 - **課程進度**：Unit 7 連續型機率分配
 - **個人作業**：助教在實習課指派
 - **課程錄影**
+  - https://youtu.be/01VWtVaI49Q
+  - https://youtu.be/s4dc_AuzxIQ
+  - https://youtu.be/5znKeM8NVUg
 
 ### Week 5 2023/10/11(三)
 
