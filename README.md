@@ -18,6 +18,9 @@
 - **課程進度**：Unit 8 抽樣分配
 - **個人作業**：助教在實習課指派
 - **課程錄影**
+  -  https://youtu.be/mqV9lGG51SA
+  -  https://youtu.be/VgoVMQRE_EA
+  -  https://youtu.be/W7CLbWzRAG4
 
 ### Week 7 2023/10/25(三)
 
