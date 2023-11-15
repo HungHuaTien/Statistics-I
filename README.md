@@ -15,6 +15,9 @@
 - **課程進度**：Unit 9 估計
 - **個人作業**：助教在實習課指派
 - **課程錄影**
+  - https://youtu.be/Bu52unslkzU
+  - https://youtu.be/e0xvtBpycTg
+  - https://youtu.be/ER55LxxD_RQ
 
 ### Week 9 2023/11/08(三)
 
