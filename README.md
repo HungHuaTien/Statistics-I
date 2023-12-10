@@ -15,6 +15,9 @@
 - **課程進度**：Unit 10 檢定
 - **個人作業**：助教指派在實習課練習
 - **課程錄影**
+  - https://youtu.be/0Y_lONPyGK0
+  - https://youtu.be/Sa_GVgNizyY
+  - 沒錄成
 
 ### Week 12 2023/11/29(三)
 
