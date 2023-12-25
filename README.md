@@ -15,13 +15,19 @@
 - **課程進度**：Unit 11 兩母體比較的推論
 - **個人作業**：助教指派在實習課練習
 - **課程錄影**：
+  - https://youtu.be/Cz0wkFgv7WM
+  - https://youtu.be/Glc6BzorbFs
+  - 缺一小時
 
 ### Week 14 2023/12/13(三)
 
 - **課程進度**：Unit 10 檢定(解題）
 - **個人作業**：助教指派在實習課練習
 - **課程錄影**
-https://teams.microsoft.com/l/meetup-join/19%3a_sx-LsyGgU5EDPZ6Klt4iraU3phy62mgAmTZXKgrOBU1%40thread.tacv2/1702270597694?context=%7b%22Tid%22%3a%224a28fc97-b766-4520-8a32-79999f14dfcb%22%2c%22Oid%22%3a%224591d026-a49a-48f2-ae8b-60c165f16bfe%22%7d
+  - https://youtu.be/44oEtsl3VCs
+  - https://youtu.be/krx7WDM547g
+  - https://youtu.be/K78ZQZ3J12k
+
 
 
 ### Week 13 2023/12/06(三)
